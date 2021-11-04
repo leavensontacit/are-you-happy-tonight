@@ -179,6 +179,7 @@
       -moz-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
     }
   }
+
   .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -189,25 +190,29 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 20%;
-}
-.orbit {
+  }
+
+  .orbit {
     width: 300px;
     height: 300px;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    position: top: 400px; left: 400px;
+    position: top: 400px;
+    left: 400px;
     border-radius: 100%;
     margin: -50px -250px;
     -webkit-animation: orbit 12.81216s linear infinite;
     animation: orbit 12.81216s linear infinite;
-}
-.planet2 {
+  }
+
+  .planet2 {
     background: #c25447;
     box-shadow: inset -30px -30px 0px #bf4d3f;
     width: 200px;
     height: 200px;
     border-radius: 100%;
-}
-.planet2:before {
+  }
+
+  .planet2:before {
     content: '';
     background: #b4483c;
     border-radius: 100%;
@@ -215,8 +220,9 @@
     height: 20px;
     display: block;
     margin: 50px 100px;
-}
-.planet2:after {
+  }
+
+  .planet2:after {
     content: '';
     background: #b84a3d;
     border-radius: 100%;
@@ -224,16 +230,18 @@
     height: 50px;
     display: block;
     margin: -20px 40px;
-}
-.moon {
+  }
+
+  .moon {
     background: #9e9e9e;
     box-shadow: inset -7px -7px 0 #8c8c8c;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin: 20px;
-}
-.moon:before {
+  }
+
+  .moon:before {
     content: '';
     background: #949494;
     border-radius: 100%;
@@ -241,8 +249,9 @@
     height: 9px;
     display: inline-block;
     margin: 10px 10px;
-}
-.moon:after {
+  }
+
+  .moon:after {
     content: '';
     background: #949494;
     border-radius: 100%;
@@ -250,24 +259,27 @@
     height: 9px;
     display: block;
     margin: -7px 20px;
-}
-@-webkit-keyframes orbit {
+  }
+
+  @-webkit-keyframes orbit {
     to {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-@keyframes orbit {
+  }
+
+  @keyframes orbit {
     to {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
+  }
+
   .ship {
     position: absolute;
-    top: 600;
+    top: -500px;
     bottom: 500px;
-    left: 150px;
+    left: -500px;
     right: 0;
     width: 48px;
     height: 48px;
@@ -439,41 +451,52 @@
       transform: scaleY(1)
     }
   }
+
   .circle {
     width: 40vw;
     height: 40vw;
     border-radius: 50%;
     overflow: hidden;
-}
-.bar {
+  }
+
+  .bar {
     width: 100%;
     height: 5vw;
-}
-.bar:nth-child(1) {
+  }
+
+  .bar:nth-child(1) {
     background: #b78466;
-}
-.bar:nth-child(2) {
+  }
+
+  .bar:nth-child(2) {
     background: #b77766;
-}
-.bar:nth-child(3) {
+  }
+
+  .bar:nth-child(3) {
     background: #aa7974;
-}
-.bar:nth-child(4) {
+  }
+
+  .bar:nth-child(4) {
     background: #ae6f7e;
-}
-.bar:nth-child(5) {
+  }
+
+  .bar:nth-child(5) {
     background: #8d5e74;
-}
-.bar:nth-child(6) {
+  }
+
+  .bar:nth-child(6) {
     background: #8c6985;
-}
-.bar:nth-child(7) {
+  }
+
+  .bar:nth-child(7) {
     background: #6d6a81;
-}
-.bar:nth-child(8) {
+  }
+
+  .bar:nth-child(8) {
     background: #3d475c;
-}
-.overlay {
+  }
+
+  .overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -481,8 +504,7 @@
     left: 0;
     opacity: 0.4;
     background: url(-);
-}
-
+  }
 </style>>
 
 <div class="space">
@@ -499,22 +521,22 @@
     <div class="star pink"></div>
     <div class="star blue"></div>
     <div class="star yellow"></div>
-          <div class="container">
-    <div class="planet2"></div>
-    <div class="orbit">
+    <div class="container">
+      <div class="planet2"></div>
+      <div class="orbit">
         <div class="moon"></div>
-    </div>
-  </div>
-  <div class="ship">
-    <div class="body">
-      <div class="eyes">
-        <span class="eye_1"></span>
-        <span class="eye_2"></span>
       </div>
-      <div class="foot_1"></div>
-      <div class="foot_2"></div>
-      <div class="foot_3"></div>
-      <div class="container">
     </div>
-</div>
+    <div class="ship">
+      <div class="body">
+        <div class="eyes">
+          <span class="eye_1"></span>
+          <span class="eye_2"></span>
+        </div>
+        <div class="foot_1"></div>
+        <div class="foot_2"></div>
+        <div class="foot_3"></div>
+        <div class="container">
+        </div>
+      </div>
     </div>
